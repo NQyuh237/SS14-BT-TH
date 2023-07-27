@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = [];
+        for (let i = 0; i < 10; i++) {
+            let number = number(prompt(`nhap so thu ${i + 1}`));
+            a.push(number);
+        }
+        let b = [];
+        for (let i = 0; i < 10; i++) {
+            let number = number(prompt(`nhap so thu ${i + 1}`));
+            b.push(number);
+        }
+        let c = a.concat(b);
+        console.log(c);
+    </script>
+</body>
+
+</html>

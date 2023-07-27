@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = [];
+        for (let i = 0; i < 10; i++) {
+            let string = +prompt(`hay nhap so nguyent heo thu tu ${i + 1} den 10`)
+            array.push(string);
+
+        }
+        for (let i = 0; i < array.length-1; i++) {
+            for (let j = 0; j < array.length-1; j++) {
+                if (array[i] > array[j]) {
+                    let a = array[i];
+                    array[i] = array[j];
+                    array[j] = a;
+                }
+            }}
+            console.log(array);
+            // console.log(array.sort());
+            // array.sort(function (a, b) {
+            //     return b - a;
+            // })
+    </script>
+</body>
+
+</html>
